@@ -1,3 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "seoge-UI";
+  src: url(./fonts/SEGOEUI.TTF);
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(./fonts/Gilroy-Light.otf);
+}
+
+@font-face {
+  font-family: "twitterchirp";
+  src: url(./fonts/twitterchirp.otf);
+}
+
+@font-face {
+  font-family: "jost-bold";
+  src: url(./fonts/jost.bold.otf);
+}
+
+@font-face {
+  font-family: "jost-medium";
+  src: url(./fonts/jost.medium.otf);
+}
+
+@font-face {
+  font-family: "jost-book";
+  src: url(./fonts/jost.book.otf);
+}
+
+@font-face {
+  font-family: "jost-light";
+  src: url(./fonts/jost.light.otf);
+}
 .App {
   text-align: center;
 }
