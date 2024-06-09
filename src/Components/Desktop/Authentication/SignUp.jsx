@@ -1,18 +1,31 @@
-import React from 'react'
+import React from 'react';
 import { useNavigate } from "react-router-dom";
-import {  Button, Grid, Snackbar, TextField } from "@mui/material";
+import { Button, Grid, Snackbar, TextField } from "@mui/material";
 
-const Login = () => {
+
+const SignUp = () => {
     const navigate = useNavigate();
   return (
-    <>
+    <div>
       <div className="flex items-center justify-center">
         <div className="mt-52">
           <h2 className="text-3xl pb-10"></h2>
-          <div className="w-[25vw] bg-gray-100 px-10 rounded-md py-10">
-            <h1 className="pb-10">Login</h1>
-            <form >
+          <div className="w-[25vw] shadow-2xl bg-white px-10 rounded-md py-10">
+            <h1 className="pb-10 font-jost-medium text-blue-600">
+              Sign Up to Health-Lab
+            </h1>
+            <form>
               <Grid container spacing={2}>
+                <Grid item xs={12}>
+                  <TextField
+                    required
+                    id="name"
+                    name="name"
+                    label="Name"
+                    fullWidth
+                    autoComplete="Name"
+                  />
+                </Grid>
                 <Grid item xs={12}>
                   <TextField
                     required
@@ -31,7 +44,6 @@ const Login = () => {
                     label="Password"
                     fullWidth
                     autoComplete="password"
-                    
                   />
                 </Grid>
                 <Grid className="flex justify-center" item xs={12}>
@@ -45,31 +57,45 @@ const Login = () => {
                       overflow: "hidden",
                       py: ".8rem",
 
-                      bgcolor: "black",
+                      bgcolor: "#2563ED",
                       ":hover": {
                         bgcolor: "#fff",
                         color: "black",
                         boxShadow: "none",
-                        border: "1px solid currentColor",
+                        border: "1px solid blue",
                       },
                     }}
                   >
                     <div className="flex items-center font-jost-medium gap-2 justify-center">
-                      Login
+                      Create Account
                     </div>
                   </Button>
                 </Grid>
               </Grid>
             </form>
             <div className="flex items-center justify-center pt-10 gap-2">
-              <h2>Don't have an account?</h2>
-              <a href="/signup">SignUp</a>
+              <h2 className="font-jost-medium">Don't have an account?</h2>
+              <Button
+                onClick={() => navigate("/login")}
+                sx={{
+                  color: "black",
+                  fontFamily: "jost-medium",
+                  bgcolor: "transparent",
+                  ":hover": {
+                    bgcolor: "transparent",
+                    color: "blue",
+                    boxShadow: "none",
+                  },
+                }}
+              >
+                Login
+              </Button>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
-export default Login
+export default SignUp
