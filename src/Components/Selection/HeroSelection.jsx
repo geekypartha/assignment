@@ -6,9 +6,8 @@ const HeroSelection = () => {
     const [smallScreen, setSmallScreen] = useState(window.innerWidth < 786);
 
     useEffect(() => {
-    if (window.innerWidth < 768) {
-        setSmallScreen(true);
-    }
+      setSmallScreen(window.innerWidth < 768) 
+        
     }, []);
   return (
     <div>

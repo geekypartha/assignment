@@ -5,14 +5,13 @@ import LandingPage from '../Mobile/LandingPage';
 
 const Selection = () => {
 
-    const [smallScreen, setSmallScreen] = useState(window.innerWidth<786);
+  const [smallScreen, setSmallScreen] = useState(window.innerWidth<786);
 
-    useEffect(() => {
-    if (window.innerWidth < 768) {
-        setSmallScreen(true);
-    }
-    
-    }, []);
+  useEffect(() => {
+
+    setSmallScreen(window.innerWidth < 768);
+      
+  }, []);
 
   return (
     <div>

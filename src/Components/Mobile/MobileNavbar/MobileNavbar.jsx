@@ -4,15 +4,21 @@ import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import AddCircleOutlineOutlinedIcon from "@mui/icons-material/AddCircleOutlineOutlined";
 import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
+import HeroMobile from '../HeroMobile/HeroMobile';
+import ExplorePage from '../HeroMobile/ExplorePage';
+import LoginMobile from '../LoginMobile/LoginMobile';
+import { useLocation, useNavigate } from 'react-router-dom';
 const MobileNavbar = () => {
-  const [activeTab, setActiveTab] = useState("home");
+  
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const tabs = [
-    { id: "home", label: "Home", icon: HomeOutlinedIcon },
-    { id: "search", label: "Search", icon: SearchIcon },
-    { id: "book", label: "book", icon: AddCircleOutlineOutlinedIcon },
-    { id: "notifications", label: "Notifications", icon: NotificationsOutlinedIcon },
-    { id: "profile", label: "Profile", icon: PersonOutlineOutlinedIcon },
+    { id: "home", label: "Home", icon: HomeOutlinedIcon, path:'/hero' },
+    { id: "search", label: "Search", icon: SearchIcon, path: '/explore' },
+    { id: "book", label: "book", icon: AddCircleOutlineOutlinedIcon, path:'/appointment' },
+    { id: "notifications", label: "Notifications", icon: NotificationsOutlinedIcon, path:'/notification' },
+    { id: "profile", label: "Profile", icon: PersonOutlineOutlinedIcon, path:'/login' },
   ];
   
   return (
@@ -23,16 +29,19 @@ const MobileNavbar = () => {
             <button
               key={tab.id}
               className="text-center flex flex-col items-center"
-              onClick={() => setActiveTab(tab.id)}
+              onClick={() => navigate(tab.path)}
             >
               <tab.icon
-                className={`w-6 h-6 ${
-                  activeTab === tab.id ? "text-blue-500" : "text-gray-500"
-                }`}
+                sx={{
+                  fontSize: 24,
+                  color: location.pathname === tab.path ? "blue" : "gray",
+                }}
               />
               <span
-                className={`text-xs font-poppins-regular ${
-                  activeTab === tab.id ? "text-blue-500" : "text-gray-500"
+                className={`text-xs ${
+                  location.pathname === tab.path
+                    ? "text-blue-500"
+                    : "text-gray-500"
                 }`}
               >
                 {tab.label}
@@ -44,5 +53,6 @@ const MobileNavbar = () => {
     </>
   );
 }
+
 
 export default MobileNavbar

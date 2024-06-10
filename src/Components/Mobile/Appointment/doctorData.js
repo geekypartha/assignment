@@ -1,6 +1,6 @@
 export const doctorData = [
   {
-    id: 1,
+    id: 345,
     name: "Dr. Bhiren Barua",
     gender: "M",
     category: "Clinical director",
@@ -70,7 +70,7 @@ export const doctorData = [
     ],
   },
   {
-    id: 2,
+    id: 564,
     name: "Dr. Bikash Yadav",
     gender: "M",
     category: "Senior Surgeon",
@@ -106,7 +106,7 @@ export const doctorData = [
     ],
   },
   {
-    id: 3,
+    id: 675,
     name: "Dr. Tanya Agarwal",
     gender: "F",
     category: "Cardiologist",
@@ -174,7 +174,7 @@ export const doctorData = [
     ],
   },
   {
-    id: 4,
+    id: 152,
     name: "Dr. Sneha Das",
     gender: "F",
     category: "Neurologist",
@@ -193,7 +193,7 @@ export const doctorData = [
     reviews: [],
   },
   {
-    id: 5,
+    id: 222,
     name: "Dr. Sanjay Kumar",
     gender: "M",
     category: "Pathologist",
@@ -224,7 +224,7 @@ export const doctorData = [
     ],
   },
   {
-    id: 6,
+    id: 222,
     name: "Dr. Kritika Paul",
     gender: "F",
     category: "Anaesthesiologist",

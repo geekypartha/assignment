@@ -3,6 +3,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import "./searchBar.css";
 import { useNavigate } from 'react-router-dom';
+import MobileNavbar from '../MobileNavbar/MobileNavbar';
 
 const ExplorePage = () => {
     const navigate = useNavigate();
@@ -17,6 +18,7 @@ const ExplorePage = () => {
 
   return (
     <div>
+      <MobileNavbar />
       <div className="flex item-center justify-center px-10">
         <div className="flex items-center w-full gap-5 pt-3">
           <div onClick={() => navigate("/hero")}>

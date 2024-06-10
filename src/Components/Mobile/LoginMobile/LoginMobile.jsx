@@ -1,19 +1,39 @@
-import React from 'react'
-import { useNavigate } from "react-router-dom";
-import {  Button, Grid, Snackbar, TextField } from "@mui/material";
+import React, { useState } from 'react'
+import MobileNavbar from '../MobileNavbar/MobileNavbar'
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import { useNavigate } from 'react-router-dom';
 
-const Login = () => {
-    const navigate = useNavigate();
+import { Button, Grid, TextField } from '@mui/material';
+
+const LoginMobile = () => {
+
+  const navigate = useNavigate();
+
+  const [phone, setPhone] = useState("");
+  
   return (
     <>
-      <div className="flex items-center justify-center">
-        <div className="mt-52">
-          <h2 className="text-3xl pb-10"></h2>
-          <div className="w-[25vw] shadow-2xl bg-white px-10 rounded-md py-10">
-            <h1 className="pb-10 font-jost-medium text-blue-600">
-              Login to Health-Lab
-            </h1>
-            <form>
+      <MobileNavbar />
+      <div>
+        {/* text area */}
+        <div className="h-[10rem] w-full bg-gray-100">
+          <div className="flex pt-5 pl-5">
+            <ArrowBackIosIcon
+              onClick={() => navigate("/hero")}
+              className="text-gray-400"
+            />
+          </div>
+          <div className="flex flex-col text-left pl-5 pt-10">
+            <h1 className="font-poppins-medium font-bold">LOGIN</h1>
+            <h2 className="font-twitterchirp text-gray-500">
+              Enter your Email and password
+            </h2>
+          </div>
+        </div>
+        {/* Login Form */}
+        <div className="mt-10 items-center justify-center">
+          <div className="w-full px-10">
+            <form action="">
               <Grid container spacing={2}>
                 <Grid item xs={12}>
                   <TextField
@@ -37,22 +57,14 @@ const Login = () => {
                 </Grid>
                 <Grid className="flex justify-center" item xs={12}>
                   <Button
-                    variant="outlined"
                     fullWidth
                     type="submit"
                     sx={{
+                      mt: "2rem",
                       px: "2rem",
                       color: "white",
-                      overflow: "hidden",
-                      py: ".8rem",
-
-                      bgcolor: "#2563ED",
-                      ":hover": {
-                        bgcolor: "#fff",
-                        color: "black",
-                        boxShadow: "none",
-                        border: "1px solid blue",
-                      },
+                      py: "1rem",
+                      bgcolor: "#3B82F6",
                     }}
                   >
                     <div className="flex items-center font-jost-medium gap-2 justify-center">
@@ -62,19 +74,15 @@ const Login = () => {
                 </Grid>
               </Grid>
             </form>
-            <div className="flex items-center justify-center pt-10 gap-2">
-              <h2 className="font-jost-medium">Don't have an account?</h2>
+            <div className="flex items-center justify-center pt-3 gap-1">
+              <h2 className="font-twitterchirp text-gray-500">Don't have an account?</h2>
               <Button
                 onClick={() => navigate("/signup")}
                 sx={{
-                  color: "black",
-                  fontFamily: "jost-medium",
+                  color: "",
+                  fontFamily: "poppins-medium",
                   bgcolor: "transparent",
-                  ":hover": {
-                    bgcolor: "transparent",
-                    color: "blue",
-                    boxShadow: "none",
-                  },
+                 
                 }}
               >
                 Sign up
@@ -87,4 +95,4 @@ const Login = () => {
   );
 }
 
-export default Login
+export default LoginMobile
