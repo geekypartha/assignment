@@ -29,8 +29,8 @@ const DoctorCarousel = () => {
   return (
     <>
       <div className="flex">
-        <div className="mt-5 h-[29rem] flex flex-col w-full  rounded-3xl shadow-xl">
-          <h1 className="flex px-10 pt-3 font-poppins-regular text-xl font-bold text-gray-400">
+        <div className="mt-5 h-[28rem] flex flex-col w-full  rounded-t-3xl bg-white">
+          <h1 className="flex px-10 pt-5 font-poppins-regular text-xl font-bold text-gray-400">
             Nearby Doctors👨‍⚕️
           </h1>
           <div className="  pt-5">
@@ -45,8 +45,6 @@ const DoctorCarousel = () => {
               animationDuration={4000}
               infinite
             />
-
-            
           </div>
         </div>
       </div>

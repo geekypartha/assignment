@@ -50,9 +50,6 @@ const MobileDoctorCard = ({doctor}) => {
           {/* 3rd div */}
           <div className="flex items-center justify-around pt-4">
             <div className="w-[4rem] h-[2rem] text-white font-poppins-medium bg-blue-400 flex items-center justify-center rounded-xl">
-              08:00
-            </div>
-            <div className="w-[4rem] h-[2rem] text-white font-poppins-medium bg-blue-400 flex items-center justify-center rounded-xl">
               09:00
             </div>
             <div className="w-[4rem] h-[2rem] text-white font-poppins-medium bg-blue-400 flex items-center justify-center rounded-xl">
@@ -60,6 +57,9 @@ const MobileDoctorCard = ({doctor}) => {
             </div>
             <div className="w-[4rem] h-[2rem] text-white font-poppins-medium bg-blue-400 flex items-center justify-center rounded-xl">
               11:00
+            </div>
+            <div className="w-[4rem] h-[2rem] text-white font-poppins-medium bg-blue-400 flex items-center justify-center rounded-xl">
+              12:00
             </div>
           </div>
           {/* 4th div */}

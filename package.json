@@ -19,6 +19,7 @@
     "react-alice-carousel": "^2.7.1",
     "react-dom": "^18.3.1",
     "react-international-phone": "^4.3.0",
+    "react-loading-skeleton": "^3.4.0",
     "react-phone-number-input": "^3.4.3",
     "react-router-dom": "^6.23.1",
     "react-scripts": "5.0.1",

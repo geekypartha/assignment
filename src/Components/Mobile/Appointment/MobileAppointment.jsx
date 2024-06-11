@@ -190,7 +190,6 @@ const MobileAppointment = () => {
               <div className=" flex items-center justify-center">
                 <button
                   type="submit"
-                  onClick={() => navigate("/appointment")}
                   className="py-5 w-full flex items-center justify-center bg-blue-500 border rounded-2xl mt-7 flex text-white text-xl font-jost-medium "
                 >
                   Set apoointment

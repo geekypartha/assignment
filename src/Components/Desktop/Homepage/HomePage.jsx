@@ -8,18 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
   const navigate = useNavigate();
-  // const { innerWidth: width, innerHeight: height } = window;
-  // console.log(width);
-
-  //  const [width, setWidth] = React.useState(window.innerWidth);
-  //  const breakPoint = 768;
-
-  //  useEffect(() => {
-  //    const handleWindowResize = () => setWidth(window.innerWidth);
-  //    window.addEventListener("resize", handleWindowResize);
-
-  //    return () => window.removeEventListener("resize", handleWindowResize);
-  //  }, []);
+ 
 
   const [smallScreen, setSmallScreen] = useState(false);
 
@@ -27,32 +16,20 @@ const HomePage = () => {
     if (window.innerWidth < 768) {
       setSmallScreen(true);
     }
-    // const size = () =>{
-    //   setSmallScreen(window.innerWidth<786);
-    // };
+ 
   }, []);
 
   return (
     <>
       <div>{smallScreen ? <MobileNavbar /> : <Navbar />}</div>
 
-      {/* <div>
-        {width > breakPoint ? (
-          <div>
-            {" "}
-            <Navbar />
-          </div>
-        ) : (
-          <div><MNavbar/></div>
-        )}
-      </div> */}
-
+      
       {/* Landing page */}
       <div className="flex min-h-[100vh] w-[100%]">
         {/* div r=left */}
         <div className=" w-[50%] h-[93vh]flex items-center justify-center ">
           <h1 className="font-twitterchirp text-7xl font-bold text-left mt-72 pl-32">
-            Online consultations <br /> from all over the world
+            Book Your Doctor <br /> Appointment Online
           </h1>
           <p className="font-gilroy text-left pl-32 pt-10 text-2xl pr-10 text-gray-500 font-medium ">
             Doctors of different specializations will take care of your health,
