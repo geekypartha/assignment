@@ -65,8 +65,8 @@ const Appointment = () => {
                   <input
                     className="block pl-5 flex  border py-4 w-full  rounded-xl focus:outline-blue-500"
                     type="text"
-                    id="name"
-                    name="name"
+                    id="age"
+                    name="age"
                     placeholder="Age"
                     required
                   />

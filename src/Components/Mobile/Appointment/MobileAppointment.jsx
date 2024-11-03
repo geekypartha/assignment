@@ -35,11 +35,11 @@ const MobileAppointment = () => {
         <div className="pb-32">
           <form onSubmit={handlesubmit} className="mx-5  pt-16">
             {/* Name */}
-            <label className="block font-poppins-medium flex pb-3 text-gray-700">
+            <label className=" font-poppins-medium flex pb-3 text-gray-700">
               Name*
             </label>
             <input
-              className="block pl-5 flex  border py-4 w-full  rounded-xl focus:outline-blue-500"
+              className=" pl-5 flex  border py-4 w-full  rounded-xl focus:outline-blue-500"
               type="text"
               id="name"
               name="name"
@@ -49,11 +49,11 @@ const MobileAppointment = () => {
             <div className="flex pt-7 gap-3 ">
               {/* Age */}
               <div className="">
-                <label className="block font-poppins-medium flex pb-3 text-gray-700">
+                <label className=" font-poppins-medium flex pb-3 text-gray-700">
                   Age*
                 </label>
                 <input
-                  className="block pl-5 flex  border py-4 w-full  rounded-xl focus:outline-blue-500"
+                  className=" pl-5 flex  border py-4 w-full  rounded-xl focus:outline-blue-500"
                   type="text"
                   id="name"
                   name="name"
@@ -63,7 +63,7 @@ const MobileAppointment = () => {
               </div>
               {/* Gender */}
               <div className="ml-5">
-                <label className="block font-poppins-medium flex pb-3 text-gray-700">
+                <label className="font-poppins-medium flex pb-3 text-gray-700">
                   Gender*
                 </label>
                 <select
@@ -84,7 +84,7 @@ const MobileAppointment = () => {
             {/* doctor select */}
             <div className="pt-7">
               <label
-                className="block  font-poppins-medium flex pb-2 text-gray-700"
+                className="font-poppins-medium flex pb-2 text-gray-700"
                 htmlFor="doctor"
               >
                 Doctor*

@@ -14,11 +14,26 @@ const MobileNavbar = () => {
   const location = useLocation();
 
   const tabs = [
-    { id: "home", label: "Home", icon: HomeOutlinedIcon, path:'/hero' },
-    { id: "search", label: "Search", icon: SearchIcon, path: '/explore' },
-    { id: "book", label: "book", icon: AddCircleOutlineOutlinedIcon, path:'/appointment' },
-    { id: "notifications", label: "Notifications", icon: NotificationsOutlinedIcon, path:'/notification' },
-    { id: "profile", label: "Profile", icon: PersonOutlineOutlinedIcon, path:'/login' },
+    { id: "home", label: "Home", icon: HomeOutlinedIcon, path: "/hero" },
+    { id: "search", label: "Search", icon: SearchIcon, path: "/explore" },
+    {
+      id: "book",
+      label: "book",
+      icon: AddCircleOutlineOutlinedIcon,
+      path: "/appointment",
+    },
+    {
+      id: "notifications",
+      label: "Notifications",
+      icon: NotificationsOutlinedIcon,
+      path: "/notification",
+    },
+    {
+      id: "profile",
+      label: "Profile",
+      icon: PersonOutlineOutlinedIcon,
+      path: "/login",
+    },
   ];
   
   return (

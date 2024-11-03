@@ -13,7 +13,6 @@ import AppointmentSelection from "./Components/Selection/AppointmentSelection";
 
 function App() {
  
-  
   return (
     <div className="App">
 
